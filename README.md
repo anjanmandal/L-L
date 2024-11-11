@@ -40,10 +40,10 @@ FFmpeg
 OpenAI API Key
 
 Installation
-##1. Clone the Repository
+## Clone the Repository
   git clone https://github.com/your-username/ListenAndLearn.git
   cd ListenAndLearn
-##2. Install Backend and Frontend Dependencies
+## Install Backend and Frontend Dependencies
   ### Install backend dependencies
     cd Backend
     npm install
@@ -51,7 +51,7 @@ Installation
   ### Install frontend dependencies
     cd ../Frontend
     npm install
-##3. Set Up Environment Variables
+## Set Up Environment Variables
   Create a .env file in the Backend directory and add your OpenAI API key:
 
 env
