@@ -1,4 +1,4 @@
-Listen And Learn - Text-to-Video Generator
+# Listen And Learn - Text-to-Video Generator
 
 A full-stack application that generates video content from a text prompt. This project consists of a backend built with Node.js and Express that handles text generation and video processing, and a frontend built with React, providing a user-friendly interface with dark mode and 3D visual effects.
 
