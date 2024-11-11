@@ -1,4 +1,5 @@
 Listen And Learn - Text-to-Video Generator
+
 A full-stack application that generates video content from a text prompt. This project consists of a backend built with Node.js and Express that handles text generation and video processing, and a frontend built with React, providing a user-friendly interface with dark mode and 3D visual effects.
 
 Table of Contents
@@ -20,6 +21,7 @@ AI-Powered Text Generation: Generates responses to user prompts using OpenAI's G
 Text-to-Speech and Video Creation: Converts text responses into speech and combines them with dynamic subtitles to create video content.
 Dark Mode Support: Toggle dark/light themes for the interface.
 Three.js Visual Effects: 3D star background for a visually engaging experience.
+
 Tech Stack
 Backend
 Node.js and Express
@@ -31,10 +33,12 @@ React with functional components and hooks
 Material-UI for component styling
 Three.js for 3D graphics
 Axios for API requests
+
 Prerequisites
 Node.js (v14 or later)
 FFmpeg
 OpenAI API Key
+
 Installation
 1. Clone the Repository
 bash
@@ -100,30 +104,5 @@ Converts the response text to audio.
 Creates a video with synchronized text subtitles.
 Frontend: Receives the video file and displays it.
 
-Project Structure
-bash
-ListenAndLearn/
-├── Backend/
-│   ├── index.js                 # Main server file
-│   ├── controllers/             # Contains API logic
-│   ├── output/                  # Temporary files for generated audio and video
-│   ├── .env                     # Environment variables
-├── Frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── App.js               # Main React component
-│   │   ├── components/          # Additional components
-│   ├── package.json
-│   ├── .env                     # Environment variables for frontend
-└── README.md                    # Project documentation
-
-Known Issues
-Cross-Origin Requests: Make sure CORS is configured correctly for deployment.
-Audio Sync: Subtitle timing may vary with different prompt lengths.
-Browser Compatibility: say library compatibility can vary across OS.
-Future Enhancements
-Support for multiple languages.
-Customizable video output options (e.g., text color, background).
-Integration with cloud storage for video management.
 License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+This project is licensed under the Anjan.
