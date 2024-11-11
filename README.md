@@ -41,26 +41,23 @@ OpenAI API Key
 
 Installation
 1. Clone the Repository
-bash
-
-git clone https://github.com/your-username/ListenAndLearn.git
-cd ListenAndLearn
+  git clone https://github.com/your-username/ListenAndLearn.git
+  cd ListenAndLearn
 2. Install Backend and Frontend Dependencies
-bash
+  # Install backend dependencies
+    cd Backend
+    npm install
 
-# Install backend dependencies
-cd Backend
-npm install
-
-# Install frontend dependencies
-cd ../Frontend
-npm install
+  # Install frontend dependencies
+    cd ../Frontend
+    npm install
 3. Set Up Environment Variables
-Create a .env file in the Backend directory and add your OpenAI API key:
+  Create a .env file in the Backend directory and add your OpenAI API key:
 
 env
 OPENAI_API_KEY=your_openai_api_key
 PORT=5000  # Optional, defaults to 5000
+
 Backend Overview
 The backend is responsible for processing text prompts, generating text responses with OpenAI, converting the text to speech, and creating a video file with synchronized subtitles.
 
@@ -68,6 +65,7 @@ Key Files and Functions
 index.js: Sets up the Express server and handles routes.
 generateAudioFromText: Converts text to .wav audio using the say library.
 generateVideoFromTextAndAudio: Uses FFmpeg to create a video with dynamic subtitles.
+
 API Endpoint
 POST /api/generate: Accepts a text prompt and returns a generated video file.
 Frontend Overview
@@ -77,14 +75,15 @@ Key Features
 Responsive Layout: Optimized for various screen sizes.
 3D Background: Animated starry background using Three.js.
 Dark Mode: Toggle between light and dark themes.
+
 Main Components
 App.js: Contains the main interface, form handling, and video display.
 Material-UI Styling: Uses custom styles for TextField and Button components.
+
 Usage
 Starting the Server
 Backend: Run the following commands from the Backend directory:
 
-bash
 node index.js
 Frontend: In a new terminal, navigate to the Frontend directory and run:
 
